@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import { Route, Switch } from 'react-router-dom'
 import ClassList from './components/ClassList/ClassList'
-import Students from './components/Student/Student'
+import Student from './components/Student/Student'
 
 export default (
    <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/about' component={About} />
       <Route path='/classlist/:class' component={ClassList} />
-      <Route path='/student/:id' component={Students} />
+      <Route path='/student/:id' component={Student} />
    </Switch>
 )
